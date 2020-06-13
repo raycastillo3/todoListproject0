@@ -19,7 +19,7 @@ newItem.appendChild(Item)
 //document.getElementById("todo-list").appendChild(newItem)
 // document.getElementById("newTodo").appendChild(newItem)
 
-  //alert('New TODO button clicked!')
+  alert('New TODO button clicked!')
 }
 
 
