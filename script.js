@@ -11,23 +11,11 @@ const uncheckedCountSpan = document.getElementById('unchecked-count')
   
 
 function newTodo() {
-var Item = document.getElementById("item-count")
-var newItem = document.createElement('li')
-newItem.appendChild(Item)
-
-
-//document.getElementById("todo-list").appendChild(newItem)
-// document.getElementById("newTodo").appendChild(newItem)
-
-  alert('New TODO button clicked!')
+  var item = parseInt(document.getElementById("item-count").item);
+  item = isNaN(item) ? 0: item;
+  item+= 1;
+  document.getElementById ('item-count').innerHTML = item;
+  alert('New TODO button clicked!');
 }
-
-
-
-
-
-//console.log (typeof newTodo)
-
-
 
 //Your goal will be to get this button to create new TODOs.
